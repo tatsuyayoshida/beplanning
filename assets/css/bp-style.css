@@ -176,9 +176,14 @@ main.wrapper{
 }
 #float a.btn img{
   width: 60%;
-margin: auto;
+  margin: auto;
+}
+#float a.btn:hover{
+  border-color: #004076;
+  background: white;
 }
 section{
+  width: 100%;
   margin-bottom: 2rem;
 }
 .cont{
@@ -264,11 +269,11 @@ p.txt span{
 }
 #steps h3{
   color: #004076;
-  font-size:min(3.5vw,1.5rem);
+  font-size:min(4vw,1.5rem);
 }
 #steps .step1 h3{
   color: #932322;
-  font-size:min(4vw,2rem);
+  font-size:min(5vw,2rem);
 }
 img.number{
   max-height: 3rem;
@@ -283,6 +288,14 @@ img.icon{
 img.w50{
   width: 45%;
 }
+#fv{
+  height: 100dvh;
+}
+#fv img{
+  height: 100%;
+  object-fit: cover;
+}
+
 .step1-1 .arrow.right,.step1-4 .arrow.right{
   bottom: 0;
   top: 0;
@@ -367,10 +380,13 @@ img.w50{
 }
 #steps .step1-6 h3{
   color: #932322;
-  font-size:min(3vw,2rem);
+  font-size:min(5vw,2rem);
   position: absolute;
   right: 20%;
   bottom: 25%;
+}
+#contact .subtitle{
+  margin-bottom: 2rem;
 }
 #company h4{
   margin-top: 6rem;
@@ -426,10 +442,91 @@ footer{
 footer p{
   font-size: 0.875rem;
 }
+#thanks a.btn{
+  background: #004076;
+  color: white;
+  padding: 0.5rem 3rem;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+#slides img.slide-title{
+  margin-bottom: -2rem;
+  position: relative;
+  z-index: 1;
+  width: 85%;
+}
+#slides .inner{
+padding-left: 0;
+padding-right: 0;
+}
+.slides{
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background: white;
+}
+.slick-slide .thumbs{
+  padding: 0 1rem;
+  position: relative;
+}
+.slick-slide .thumbs img.before{
+  margin-bottom: 1rem;
+}
+.slick-slide .thumbs img.after{
+  margin-top: 1rem;
+}
+.slick-slide h6{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.slick-slide img.arrow{
+  position: absolute;
+  top: 0;
+  bottom: -1.75rem;
+  margin: auto;
+  height: 15%;
+  width: 15%;
+}
+.slick-dots{
+  position: static;
+  margin-top: 2rem;
+}
+.slick-initialized .slick-slide{
+  opacity: 0.3;
+}
+.slick-initialized .slick-slide.slick-current{
+  opacity: 1;
+}
+.slick-prev:before, .slick-next:before{
+  color: black;
+  font-size: 32px;
+}
+.slick-prev, .slick-next{
+    top: calc(50% + 0.75rem);
+    width: 2rem;
+    height: 2rem;
+}
+.slick-next{
+  right: 1rem;
+}
+.slick-prev{
+  left: 1rem;
+}
 @media screen and (min-width: 768px){
   main.wrapper{
-    max-width: 540px;
     margin: auto;
+  }
+  section{
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#slides{
+    width: 100%;
+    max-width: 100%;
+  }
+  #slides .inner{
+    overflow: hidden;
   }
   .step1-1 .subtitle,.step1-2 .subtitle{
     height: 90px;

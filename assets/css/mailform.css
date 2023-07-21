@@ -31,6 +31,7 @@ form#mail_form dl dt {
 	width: 100%;
 	font-size: 1rem;
 font-weight: 400;
+color: #004076;
 }
 
 form#mail_form dl dd {
@@ -55,18 +56,16 @@ form#mail_form dl dt span.optional {
 	display: inline-block;
 	font-size: 85%;
 	color: #ffffff;
-	padding: 4px 10px;
+	padding-right: 2px;
 	border-radius: 3px;
 }
 
 form#mail_form dl dt span.required {
-	background: #d9534f;
-	border: 1px solid #d43f3a;
+    color: #004076;
 }
 
 form#mail_form dl dt span.optional {
-	background: #337ab7;
-	border: 1px solid #2e6da4;
+display: none;
 }
 
 
@@ -149,7 +148,7 @@ form#mail_form input[type="email"],
 form#mail_form input[type="tel"] {
 	width: calc( 100% - 1rem - 2px );
 	padding: 0.5rem;
-	border: 1px solid #cccccc;
+	border: 3px solid #004076;
 	border-radius: 3px;
 	background: #fafafa;
 	-webkit-appearance: none;
@@ -187,7 +186,7 @@ form#mail_form textarea {
 	height: 200px;
 	padding: 7px 2%;
 	resize: vertical;
-	border: 1px solid #cccccc;
+	border: 3px solid #004076;
 	border-radius: 3px;
 	background: #fafafa;
 	-webkit-appearance: none;
@@ -195,7 +194,7 @@ form#mail_form textarea {
 	font-family: inherit;
 	line-height: normal;
 }
-
+input:focus, textarea:focus {outline: none;}
 
 
 
@@ -309,7 +308,7 @@ form#mail_form input[type="button"]:hover {
 /* -- form#mail_form, dl, dt, dd -------------------------------------------------------------------------------- */
 
 form#mail_form {
-	width: 95%;
+	width: 100%;
 	font-size: 100%;
 }
 
@@ -350,7 +349,7 @@ form#mail_form dl dt span.optional {
 
 form#mail_form input[name="phone"],
 form#mail_form input[name="schedule"] {
-	width: 60%;
+	width: 100%;
 }
 
 

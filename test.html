@@ -21,14 +21,16 @@
   <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');</style>
   <link rel="stylesheet" href="./assets/css/destyle.css" type="text/css" />
   <link rel="stylesheet" href="./assets/css/mailform.css" />
+  <link rel="stylesheet" href="./assets/css/slick.css" />
+  <link rel="stylesheet" href="./assets/css/slick-theme.css" />
   <link rel="stylesheet" href="./assets/css/bp-style.css?230232" type="text/css" />
 </head>
 <body id="index" class="top" ontouchstart="">
   <main class="wrapper">
     <div id="float" class="flex column flex-align-left">
       <a class="btn tel flex" href="tel:042-851-3894"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/tel.png" alt="tel"/></a>
-      <a class="btn mail flex" href=""><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/mail.svg" alt="mail"/></a>
-      <a class="btn insta flex" href=""><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/insta.svg" alt="instagram"/></a>
+      <a class="btn mail flex" href="#contact"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/mail.svg" alt="mail"/></a>
+      <a class="btn insta flex" href="https://www.instagram.com/beplanning2016/" target="_blank"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/insta.svg" alt="instagram"/></a>
     </div>
     <article>
       <!--fv-->
@@ -154,7 +156,56 @@
                   <!--slides-->
                   <section id="slides">
                     <div class="inner">
-                      <img class="lazyload wmx " src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/slide_title.png" alt="befor / after" width="734" height="415"/>
+                      <img class="lazyload wmx slide-title" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/slide_title.png" alt="befor / after" width="734" height="415"/>
+
+                      <div class="slides">
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>ウレタン塗膜防水</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/u_Before1.jpg" alt="ウレタン塗膜防水" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/u_After1.jpg" alt="ウレタン塗膜防水" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>塩ビシート防水</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/enb_Before1.jpg" alt="塩ビシート防水" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/enb_After1.jpg" alt="塩ビシート防水" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>改質アスファルト防水トーチ工法</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/kai_Before1.jpg" alt="改質アスファルト防水トーチ工法" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/kai_After1.jpg" alt="改質アスファルト防水トーチ工法" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>シングル葺き</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/single_Before2.jpg" alt="シングル葺き" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/single_After2.jpg" alt="シングル葺き" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>ウレタン塗膜防水</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/u_Before2.jpg" alt="ウレタン塗膜防水" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/u_After2.jpg" alt="ウレタン塗膜防水" >
+                        </div>
+                        </div>
+
+                      </div>
+
                     </div>
                   </section>
 
@@ -168,7 +219,7 @@
                         <p class="txt">防水工事や外壁関係ののご相談、ご依頼につきましては、下記フォームよりお気軽にお問い合わせください。</p>
 
                         <!---->
-                        <form action="./php/mailform.php" method="post" id="mail_form">
+                        <form action="./assets/php/mailform.php" method="post" id="mail_form">
 
 
                         	<dl>
@@ -260,7 +311,7 @@
                           </div>
                         </section>
 
-                        <!--faq-->
+                        <!--company-->
                         <section id="company" class="cont lyel">
 
                           <picture>
@@ -357,7 +408,6 @@
                         <script src="./assets/js/mailform-js.php"></script>
                         <script src="./assets/js/jquery.autoKana.js"></script>
                         <script src="./assets/js/ajaxzip3.js"></script>
-
                         <script>
                         	(function( $ ) {
                         		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
@@ -368,5 +418,8 @@
                         		});
                         	})( jQuery );
                         </script>
+                        <script src="./assets/js/slick.js"></script>
+                        <script src="./assets/js/slide-func.js"></script>
+
                       </body>
                       </html>
