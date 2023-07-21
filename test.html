@@ -20,10 +20,16 @@
   <link rel="icon" href="./assets/img/favicon.ico">
   <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');</style>
   <link rel="stylesheet" href="./assets/css/destyle.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/mailform.css" />
   <link rel="stylesheet" href="./assets/css/bp-style.css?230232" type="text/css" />
 </head>
 <body id="index" class="top" ontouchstart="">
   <main class="wrapper">
+    <div id="float" class="flex column flex-align-left">
+      <a class="btn tel flex" href="tel:042-851-3894"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/tel.png" alt="tel"/></a>
+      <a class="btn mail flex" href=""><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/mail.svg" alt="mail"/></a>
+      <a class="btn insta flex" href=""><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/insta.svg" alt="instagram"/></a>
+    </div>
     <article>
       <!--fv-->
       <section id="fv" class="cont">
@@ -120,17 +126,17 @@
                     </div>
 
                     <div class="flex flex-between flex-align-left">
-                      <div class="cont block yel w50 step1-4">
+                      <div class="cont block org w50 step1-4">
                         <img class="lazyload number" src="./assets/img/lazy_1-1.png" alt="4" data-src="./assets/img/contents/4.png" />
                         <img class="lazyload icon" src="./assets/img/lazy_1-1.png" alt="契約" data-src="./assets/img/contents/contract.png" />
-                        <img class="lazyload " src="./assets/img/lazy_1-1.png" alt="契約" data-src="./assets/img/contents/contract_title.png" />
+                        <img class="lazyload subtitle" src="./assets/img/lazy_1-1.png" alt="契約" data-src="./assets/img/contents/contract_title.png" />
                         <h3 class="txt title center mtop mbottom">契約</h3>
                         <img class="lazyload arrow right" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
                       </div>
                       <div class="cont block yel w50 step1-5">
                         <img class="lazyload number" src="./assets/img/lazy_1-1.png" alt="5" data-src="./assets/img/contents/5.png" />
                         <img class="lazyload icon" src="./assets/img/lazy_1-1.png" alt="工事" data-src="./assets/img/contents/construction.png" />
-                        <img class="lazyload " src="./assets/img/lazy_1-1.png" alt="工事" data-src="./assets/img/contents/construction_title.png" />
+                        <img class="lazyload subtitle" src="./assets/img/lazy_1-1.png" alt="工事" data-src="./assets/img/contents/construction_title.png" />
                         <h3 class="txt title center mtop mbottom">工事</h3>
                         <img class="lazyload arrow bottom" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
                       </div>
@@ -138,9 +144,9 @@
 
                     <div class="cont block blu step1-6">
                       <img class="lazyload number" src="./assets/img/lazy_1-1.png" alt="6" data-src="./assets/img/contents/6.png" />
-                      <img class="lazyload wmx" src="./assets/img/lazy_1-1.png" alt="工事" data-src="./assets/img/contents/completed_title.png" />
-                      <h3 class="txt title center mtop mbottom">工事</h3>
-                      <img class="lazyload wmx" src="./assets/img/lazy_1-1.png" alt="工事" data-src="./assets/img/contents/completed.png" />
+                      <img class="lazyload wmx" src="./assets/img/lazy_1-1.png" alt="完成" data-src="./assets/img/contents/completed_title.png" />
+                      <h3 class="txt title center mtop mbottom">完成</h3>
+                      <img class="lazyload wmx bg" src="./assets/img/lazy_1-1.png" alt="完成" data-src="./assets/img/contents/completed.png" />
                     </div>
 
                   </section>
@@ -160,6 +166,52 @@
                           <img class="lazyload wmx subtitle" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/contact_title.png" alt="contact us" width="734" height="415"/>
                         </picture>
                         <p class="txt">防水工事や外壁関係ののご相談、ご依頼につきましては、下記フォームよりお気軽にお問い合わせください。</p>
+
+                        <!---->
+                        <form action="./php/mailform.php" method="post" id="mail_form">
+
+
+                        	<dl>
+                        		<dt><i></i>お名前</dt>
+                        		<dd class="required"><input type="text" name="name_1" value="" /> <input type="text" name="name_2" value="" /></dd>
+                        	</dl>
+
+                        	<dl>
+                        		<dt><i></i>ふりがな</dt>
+                        		<dd><input type="text" name="read_1" value="" /> <input type="text" name="read_2" value="" /></dd>
+                        	</dl>
+
+                        	<dl>
+                        		<dt><i></i>E-MAIL</dt>
+                        		<dd class="required"><input type="email" name="mail_address" value="" /></dd>
+                        	</dl>
+
+                        	<dl>
+                        		<dt><i></i>E-MAIL(確認用)</dt>
+                        		<dd class="required"><input type="email" name="mail_address_confirm" value="" /></dd>
+                        	</dl>
+
+                        	<dl>
+                        		<dt><i></i>TEL</dt>
+                        		<dd class="required"><input type="tel" name="phone" value="" /></dd>
+                        	</dl>
+
+                          <dl>
+                        		<dt><i></i>FAX</dt>
+                        		<dd ><input type="tel" name="fax" value="" /></dd>
+                        	</dl>
+
+
+                        	<dl>
+                        		<dt><i></i>お問い合わせ内容</dt>
+                        		<dd class="required"><textarea name="contents" cols="40" rows="5"></textarea></dd>
+                        	</dl>
+
+
+                        	<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+
+                        </form>
+                        <!---->
                       </div>
                     </section>
 
@@ -215,7 +267,7 @@
                             <source media="(max-width: 430px)" data-srcset="./assets/img/contents/company_title.png" alt="company" width="525" height="525">
                               <img class="lazyload wmx title" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/company_title.png" alt="company" width="734" height="415"/>
                             </picture>
-                            <h2 class="txt title center mtop mbottom">会社概要</h2>
+                            <h4 class="txt title center mtop mbottom">会社概要</h4>
                             <picture>
                               <source media="(max-width: 430px)" data-srcset="./assets/img/contents/BP_member_02.jpg" alt="company" width="525" height="525">
                                 <img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/BP_member_02.jpg" alt="company" width="734" height="415"/>
@@ -268,7 +320,7 @@
 
                             <picture>
                               <source media="(max-width: 430px)" data-srcset="./assets/img/contents/car.png" alt="company" width="525" height="525">
-                                <img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/car.png" alt="company" width="734" height="415"/>
+                                <img class="lazyload illust" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/car.png" alt="company" width="734" height="415"/>
                               </picture>
 
                             </section>
@@ -278,12 +330,43 @@
                                 <source media="(max-width: 430px)" data-srcset="./assets/img/contents/beplanning-bi.png" alt="BE Planning Co.,Ltd." width="525" height="525">
                                   <img class="lazyload wmx title" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/beplanning-bi.png" alt="BE Planning Co.,Ltd." width="734" height="415"/>
                                 </picture>
+                                <h4 class="txt title center mtop mbottom">BE Planning Co.,Ltd.</h4>
+                                <dl>
+                                  <dt>Sagamihara</dt>
+                                  <dd>〒252-0224</dd>
+                                  <dd>神奈川県相模原市中央区青葉2-3-10</dd>
+                                  <dd>Tel:<a href="tel:042-851-3894">042-851-3894</a></dd>
+                                  <dd>Fax:042-751-7058</dd>
+                                </dl>
+                                <dl>
+                                  <dt>Odawara</dt>
+                                  <dd>〒256-0816</dd>
+                                  <dd>神奈川県小田原市酒匂2-12-13サニーハイツ1F</dd>
+                                  <dd>Tel:<a href="tel:046-520-5845">046-520-5845</a></dd>
+                                  <dd>Fax:046-520-5846</dd>
+                                </dl>
                             </section>
-
+                            <footer>
+                              <p>Copyrights BE Planning Co.,Ltd. All Rights Reserved.</p>
+                            </footer>
                           </article>
                         </main>
 
                         <script src="./assets/js/jquery.min.js"></script>
                         <script src="./assets/js/lazysizes.min.js"></script>
+                        <script src="./assets/js/mailform-js.php"></script>
+                        <script src="./assets/js/jquery.autoKana.js"></script>
+                        <script src="./assets/js/ajaxzip3.js"></script>
+
+                        <script>
+                        	(function( $ ) {
+                        		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
+                        			katakana: false
+                        		});
+                        		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
+                        			katakana: false
+                        		});
+                        	})( jQuery );
+                        </script>
                       </body>
                       </html>

@@ -157,6 +157,26 @@ img.wmx{
 main.wrapper{
   width: 100%;
   margin: auto;
+  position: relative;
+}
+#float{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: max-content;
+  z-index: 1;
+}
+#float a.btn{
+  width: 3rem;
+  height: 3rem;
+  border: 8px solid black;
+  border-radius: 100%;
+  background: #F2E8D7;
+  margin-top: 5px;
+}
+#float a.btn img{
+  width: 60%;
+margin: auto;
 }
 section{
   margin-bottom: 2rem;
@@ -185,6 +205,9 @@ section{
 }
 .blu{
   background: #32A2AF;
+}
+.org{
+  background: #CD9B3A;
 }
 .lyel{
   border-color: #CDC53C;
@@ -248,7 +271,7 @@ p.txt span{
   font-size:min(4vw,2rem);
 }
 img.number{
-  max-height: 2.5rem;
+  max-height: 3rem;
   width: auto;
 }
 img.icon{
@@ -305,7 +328,7 @@ img.w50{
   margin-right: -2rem;
 }
 .step1-3 .number{
-  margin: auto;
+  margin: 1rem auto;
 }
 .step1-3 .icon{
   position: absolute;
@@ -313,7 +336,95 @@ img.w50{
   bottom: -0.1rem;
 }
 .step1-3 .flex{
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+.step1-4 .icon{
+  max-height: 3rem;
+}
+.step1-4 .subtitle{
+  width: 75%;
+  margin: 1rem auto 2rem auto;
+}
+.step1-5 .icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  max-height: inherit;
+}
+.step1-5 .subtitle{
+  margin: 4rem auto 2rem auto;
+}
+.step1-6 .bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+}
+.step1-6 .number{
+  margin-left: auto;
+  margin-right: auto;
+}
+#steps .step1-6 h3{
+  color: #932322;
+  font-size:min(3vw,2rem);
+  position: absolute;
+  right: 20%;
+  bottom: 25%;
+}
+#company h4{
+  margin-top: 6rem;
+  color: black;
+}
+#company dl{
+  line-height: 1.75;
+  color: black;
+}
+#company dl dt{
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+#company dl dt:first-child{
+  margin-top: 0;
+}
+#company dl dd{
+  font-weight: 500;
+}
+#company  .illust{
+  width: 60%;
+  margin: auto;
+  margin-bottom: -5rem;
+}
+#outro{
+  margin-top: 12rem;
+  padding-bottom: 4rem;
+}
+#outro img.title{
+  top: -6rem;
+}
+#outro h4{
+  margin-top: 8rem;
+}
+#outro dl{
+  text-align: center;
+  line-height: 1.75;
+  margin-top: 2rem;
+}
+#outro dl dt{
+
+}
+#outro dl dd{
+  line-height: 2;
+}
+#outro a{
+  text-decoration: underline;
+}
+footer{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer p{
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px){
   main.wrapper{
@@ -322,5 +433,19 @@ img.w50{
   }
   .step1-1 .subtitle,.step1-2 .subtitle{
     height: 90px;
+  }
+  #float{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    width: calc(50vw - 280px);
+  }
+  #float a.btn{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 8px solid black;
+    border-radius: 100%;
+    background: #F2E8D7;
+    margin-top: 5px;
   }
 }
