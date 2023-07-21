@@ -183,6 +183,9 @@ section{
 .yel{
   background: #CFC23B;
 }
+.blu{
+  background: #32A2AF;
+}
 .lyel{
   border-color: #CDC53C;
 }
@@ -236,13 +239,26 @@ p.txt span{
   max-width: 60%;
   margin-top: 4rem;
 }
-.step1 h3{
+#steps h3{
+  color: #004076;
+  font-size:min(3.5vw,1.5rem);
+}
+#steps .step1 h3{
   color: #932322;
   font-size:min(4vw,2rem);
 }
 img.number{
-  max-height: 3rem;
+  max-height: 2.5rem;
   width: auto;
+}
+img.icon{
+  max-height: 4rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.w50{
+  width: 45%;
 }
 .step1-1 .arrow.right,.step1-4 .arrow.right{
   bottom: 0;
@@ -280,9 +296,31 @@ img.number{
   list-style: disc;
   margin-left: 1.25rem;
 }
+.step1-1 .subtitle,.step1-2 .subtitle{
+  height: 55px;
+  width: auto;
+  margin: auto;
+}
+.step1-2 .icon{
+  margin-right: -2rem;
+}
+.step1-3 .number{
+  margin: auto;
+}
+.step1-3 .icon{
+  position: absolute;
+  right: -0.25rem;
+  bottom: -0.1rem;
+}
+.step1-3 .flex{
+  margin: 2rem 0;
+}
 @media screen and (min-width: 768px){
   main.wrapper{
     max-width: 540px;
     margin: auto;
+  }
+  .step1-1 .subtitle,.step1-2 .subtitle{
+    height: 90px;
   }
 }
