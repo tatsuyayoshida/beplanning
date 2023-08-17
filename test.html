@@ -24,24 +24,35 @@
   <link rel="stylesheet" href="./assets/css/slick.css" />
   <link rel="stylesheet" href="./assets/css/slick-theme.css" />
   <link rel="stylesheet" href="./assets/css/bp-style.css?230232" type="text/css" />
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BF14VELQEY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BF14VELQEY');
+</script>
+
 </head>
 <body id="index" class="top" ontouchstart="">
   <main class="wrapper">
     <div id="float" class="flex column flex-align-left">
-      <a class="btn tel flex" href="tel:042-851-3894"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/tel.png" alt="tel"/></a>
-      <a class="btn mail flex" href="#contact"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/mail.svg" alt="mail"/></a>
-      <a class="btn insta flex" href="https://www.instagram.com/beplanning2016/" target="_blank"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/insta.svg" alt="instagram"/></a>
+      <a class="btn tel flex inview" href="tel:042-851-3894"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/tel.png" alt="tel"/></a>
+      <a class="btn mail flex inview" href="#contact"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/mail.svg" alt="mail"/></a>
+      <a class="btn insta flex inview" href="https://www.instagram.com/beplanning2016/" target="_blank"><img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/insta.svg" alt="instagram"/></a>
     </div>
     <article>
       <!--fv-->
-      <section id="fv" class="cont">
+      <section id="fv" class="cont inview">
         <picture>
           <source media="(max-width: 430px)" data-srcset="./assets/img/contents/cover.jpg" alt="有限会社BE Planning" width="525" height="525">
             <img class="lazyload" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/cover.jpg" alt="有限会社BE Planning" width="825" height="1770"/>
           </picture>
         </section>
         <!--greeting-->
-        <section id="greeting" class="cont">
+        <section id="greeting" class="cont inview">
           <div class="inner">
             <picture>
               <source media="(max-width: 430px)" data-srcset="./assets/img/contents/greeting.jpg" alt="代表あいさつ" width="525" height="525">
@@ -65,7 +76,7 @@
               </div>
             </section>
             <!--point-->
-            <section id="point" class="cont beg">
+            <section id="point" class="cont beg inview">
               <div class="inner">
                 <picture>
                   <source media="(max-width: 430px)" data-srcset="./assets/img/contents/point-title.png" alt="私達の強み" width="525" height="525">
@@ -86,7 +97,7 @@
               </section>
               <!--steps-->
               <section id="steps">
-                <div class="cont block head yel step1">
+                <div class="cont block head yel step1 inview">
                   <picture>
                     <source media="(max-width: 430px)" data-srcset="./assets/img/contents/steps_title.png" alt="step" width="525" height="525">
                       <img class="lazyload wmx title" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/steps_title.png" alt="step" width="734" height="415"/>
@@ -99,7 +110,7 @@
                       <img class="lazyload arrow" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
                     </div>
 
-                    <div class="flex flex-between flex-align-left">
+                    <div class="flex flex-between flex-align-left inview">
                       <div class="cont block yel w50 step1-1">
                         <img class="lazyload number" src="./assets/img/lazy_1-1.png" alt="1" data-src="./assets/img/contents/1.png" />
                         <img class="lazyload icon" src="./assets/img/lazy_1-1.png" alt="お問い合わせ" data-src="./assets/img/contents/tel.png" />
@@ -116,7 +127,7 @@
                       </div>
                     </div>
 
-                    <div class="cont block yel step1-3">
+                    <div class="cont block yel step1-3 inview">
                       <img class="lazyload number" src="./assets/img/lazy_1-1.png" alt="3" data-src="./assets/img/contents/3.png" />
                       <div class="flex flex-between ">
                         <img class="lazyload w50" src="./assets/img/lazy_1-1.png" alt="お見積り" data-src="./assets/img/contents/cost_title.png" />
@@ -127,7 +138,7 @@
                       <img class="lazyload arrow bottom" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
                     </div>
 
-                    <div class="flex flex-between flex-align-left">
+                    <div class="flex flex-between flex-align-left inview">
                       <div class="cont block org w50 step1-4">
                         <img class="lazyload number" src="./assets/img/lazy_1-1.png" alt="4" data-src="./assets/img/contents/4.png" />
                         <img class="lazyload icon" src="./assets/img/lazy_1-1.png" alt="契約" data-src="./assets/img/contents/contract.png" />
@@ -144,7 +155,7 @@
                       </div>
                     </div>
 
-                    <div class="cont block blu step1-6">
+                    <div class="cont block blu step1-6 inview">
                       <img class="lazyload number" src="./assets/img/lazy_1-1.png" alt="6" data-src="./assets/img/contents/6.png" />
                       <img class="lazyload wmx" src="./assets/img/lazy_1-1.png" alt="完成" data-src="./assets/img/contents/completed_title.png" />
                       <h3 class="txt title center mtop mbottom">完成</h3>
@@ -154,17 +165,26 @@
                   </section>
 
                   <!--slides-->
-                  <section id="slides">
+                  <section id="slides" class="inview">
                     <div class="inner">
                       <img class="lazyload wmx slide-title" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/slide_title.png" alt="befor / after" width="734" height="415"/>
 
                       <div class="slides">
                         <div class="box">
                         <div class="thumbs flex column">
-                          <h6>ウレタン塗膜防水</h6>
-                          <img class="lazyload before" data-lazy="./assets/img/slide/u_Before1.jpg" alt="ウレタン塗膜防水" >
+                          <h6>長尺塩ビシート</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/c_enb_Before1.jpg" alt="長尺塩ビシート" >
                           <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
-                          <img class="lazyload after" data-lazy="./assets/img/slide/u_After1.jpg" alt="ウレタン塗膜防水" >
+                          <img class="lazyload after" data-lazy="./assets/img/slide/c_enb_After1.jpg" alt="長尺塩ビシート" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>長尺塩ビシート</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/c_enb_Before3.jpg" alt="長尺塩ビシート" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/c_enb_After3.jpg" alt="長尺塩ビシート" >
                         </div>
                         </div>
 
@@ -179,6 +199,24 @@
 
                         <div class="box">
                         <div class="thumbs flex column">
+                          <h6>塩ビシート防水</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/enb_Before2.jpg" alt="塩ビシート防水" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/enb_After2.jpg" alt="塩ビシート防水" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>改質アスファルト防水常温粘着工法</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/kai_a_Before.jpg" alt="改質アスファルト防水常温粘着工法" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/kai_a_After.jpg" alt="改質アスファルト防水常温粘着工法" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
                           <h6>改質アスファルト防水トーチ工法</h6>
                           <img class="lazyload before" data-lazy="./assets/img/slide/kai_Before1.jpg" alt="改質アスファルト防水トーチ工法" >
                           <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
@@ -188,10 +226,37 @@
 
                         <div class="box">
                         <div class="thumbs flex column">
+                          <h6>改質アスファルト防水トーチ工法</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/kai_Before5.jpg" alt="改質アスファルト防水トーチ工法" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/kai_After5.jpg" alt="改質アスファルト防水トーチ工法" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>シングル葺き</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/single_Before1.jpg" alt="シングル葺き" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/single_After1.jpg" alt="シングル葺き" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
                           <h6>シングル葺き</h6>
                           <img class="lazyload before" data-lazy="./assets/img/slide/single_Before2.jpg" alt="シングル葺き" >
                           <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
                           <img class="lazyload after" data-lazy="./assets/img/slide/single_After2.jpg" alt="シングル葺き" >
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="thumbs flex column">
+                          <h6>ウレタン塗膜防水</h6>
+                          <img class="lazyload before" data-lazy="./assets/img/slide/u_Before1.jpg" alt="ウレタン塗膜防水" >
+                          <img class="lazyload arrow" data-lazy="./assets/img/contents/circleArrow.svg" width="75" height="75"/>
+                          <img class="lazyload after" data-lazy="./assets/img/slide/u_After1.jpg" alt="ウレタン塗膜防水" >
                         </div>
                         </div>
 
@@ -210,7 +275,7 @@
                   </section>
 
                   <!--contact-->
-                  <section id="contact" class="cont">
+                  <section id="contact" class="cont inview">
                     <div class="inner">
                       <picture>
                         <source media="(max-width: 430px)" data-srcset="./assets/img/contents/contact_title.png" alt="contact us" width="525" height="525">
@@ -224,38 +289,38 @@
 
                         	<dl>
                         		<dt><i></i>お名前</dt>
-                        		<dd class="required"><input type="text" name="name_1" value="" /> <input type="text" name="name_2" value="" /></dd>
+                        		<dd class="required"><input type="text" name="name_1" value="" placeholder="防水"/> <input type="text" name="name_2" value="" placeholder="太郎"/></dd>
                         	</dl>
 
                         	<dl>
                         		<dt><i></i>ふりがな</dt>
-                        		<dd><input type="text" name="read_1" value="" /> <input type="text" name="read_2" value="" /></dd>
+                        		<dd><input type="text" name="read_1" value="" placeholder="ぼうすい"/> <input type="text" name="read_2" value="" placeholder="たろう"/></dd>
                         	</dl>
 
                         	<dl>
                         		<dt><i></i>E-MAIL</dt>
-                        		<dd class="required"><input type="email" name="mail_address" value="" /></dd>
+                        		<dd class="required"><input type="email" name="mail_address" value="" placeholder="bousui@mailadress.com"/></dd>
                         	</dl>
 
                         	<dl>
                         		<dt><i></i>E-MAIL(確認用)</dt>
-                        		<dd class="required"><input type="email" name="mail_address_confirm" value="" /></dd>
+                        		<dd class="required"><input type="email" name="mail_address_confirm" value="" placeholder="bousui@mailadress.com"/></dd>
                         	</dl>
 
                         	<dl>
                         		<dt><i></i>TEL</dt>
-                        		<dd class="required"><input type="tel" name="phone" value="" /></dd>
+                        		<dd class="required"><input type="tel" name="phone" value="" placeholder="09012345678"/></dd>
                         	</dl>
 
                           <dl>
                         		<dt><i></i>FAX</dt>
-                        		<dd ><input type="tel" name="fax" value="" /></dd>
+                        		<dd ><input type="tel" name="fax" value="" placeholder="0312345678"/></dd>
                         	</dl>
 
 
                         	<dl>
                         		<dt><i></i>お問い合わせ内容</dt>
-                        		<dd class="required"><textarea name="contents" cols="40" rows="5"></textarea></dd>
+                        		<dd class="required"><textarea name="contents" cols="40" rows="5" placeholder="お問い合わせ内容をご記入ください"></textarea></dd>
                         	</dl>
 
 
@@ -267,7 +332,7 @@
                     </section>
 
                     <!--faq-->
-                    <section id="faq" class="cont block head beg">
+                    <section id="faq" class="cont block head beg inview">
                       <div class="inner">
                         <picture>
                           <source media="(max-width: 430px)" data-srcset="./assets/img/contents/faq.png" alt="faq" width="525" height="525">
@@ -312,7 +377,7 @@
                         </section>
 
                         <!--company-->
-                        <section id="company" class="cont lyel">
+                        <section id="company" class="cont lyel inview">
 
                           <picture>
                             <source media="(max-width: 430px)" data-srcset="./assets/img/contents/company_title.png" alt="company" width="525" height="525">
@@ -371,15 +436,15 @@
 
                             <picture>
                               <source media="(max-width: 430px)" data-srcset="./assets/img/contents/car.png" alt="company" width="525" height="525">
-                                <img class="lazyload illust" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/car.png" alt="company" width="734" height="415"/>
+                                <img class="lazyload illust inview" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/car.png" alt="company" width="734" height="415"/>
                               </picture>
 
                             </section>
 
-                            <section id="outro" class="cont lbeg">
+                            <section id="outro" class="cont lbeg inview">
                               <picture>
                                 <source media="(max-width: 430px)" data-srcset="./assets/img/contents/beplanning-bi.png" alt="BE Planning Co.,Ltd." width="525" height="525">
-                                  <img class="lazyload wmx title" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/beplanning-bi.png" alt="BE Planning Co.,Ltd." width="734" height="415"/>
+                                  <img class="lazyload wmx title inview" src="./assets/img/lazy_1-1.png" data-src="./assets/img/contents/beplanning-bi.png" alt="BE Planning Co.,Ltd." width="734" height="415"/>
                                 </picture>
                                 <h4 class="txt title center mtop mbottom">BE Planning Co.,Ltd.</h4>
                                 <dl>
@@ -405,6 +470,7 @@
 
                         <script src="./assets/js/jquery.min.js"></script>
                         <script src="./assets/js/lazysizes.min.js"></script>
+                        <script src="./assets/js/jquery.inview.js"></script>
                         <script src="./assets/js/mailform-js.php"></script>
                         <script src="./assets/js/jquery.autoKana.js"></script>
                         <script src="./assets/js/ajaxzip3.js"></script>
@@ -419,7 +485,7 @@
                         	})( jQuery );
                         </script>
                         <script src="./assets/js/slick.js"></script>
-                        <script src="./assets/js/slide-func.js"></script>
+                        <script src="./assets/js/common-func.js"></script>
 
                       </body>
                       </html>

@@ -186,6 +186,15 @@ section{
   width: 100%;
   margin-bottom: 2rem;
 }
+.inview{
+  transition: all 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) ;
+  transform: translateY(1rem);
+  opacity: 0;
+}
+.inview.on{
+  opacity: 1;
+  transform: translateY(0);
+}
 .cont{
   width: 100%;
   border: 8px solid black;
@@ -505,6 +514,7 @@ padding-right: 0;
     top: calc(50% + 0.75rem);
     width: 2rem;
     height: 2rem;
+    z-index: 10;
 }
 .slick-next{
   right: 1rem;

@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   $('.slides').slick({
   centerMode: true,
   autoplay: true,
@@ -28,5 +28,25 @@ $(document).ready(function(){
     }
   ]
 });
+
+$('a[href^="#"]').click(function(){
+    var adjust = 0;
+    var speed = 400;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top + adjust;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+
+  /*inview*/
+  $('.inview').on('inview', function(event, isInView) {
+    if (isInView) {
+      $(this).addClass('on');
+    } else {
+
+    }
+  });
+
 
 });
